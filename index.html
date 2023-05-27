@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal Portfolio Website</title>
+    <script
+      src="https://kit.fontawesome.com/e7d8bfb387.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div></div>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i
+              class="fa-sharp fa-solid fa-circle-xmark close"
+              onclick="closemenu()"
+            ></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Frontend/Web developer</p>
+          <h1>
+            Hi, I'm <span>Malamir</span><br />
+            Petkov From Bulgaria
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION ABOUT -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/background.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              I may not have professional experience in the field just yet, my
+              determination to learn and grow is unwavering. I believe that
+              curiosity is the key to unlocking endless possibilities, and I'm
+              ready to immerse myself in the world of web technologies to bring
+              my creative visions to life.Every day, I dive into the vast ocean
+              of HTML, CSS and JavaScript, eager to absorb every concept and
+              technique that will help me design stunning and user-friendly
+              interfaces. With each line of code, I gain confidence and witness
+              my skills grow. I'm not afraid to challenge myself and push beyond
+              my comfort zone, because I know that's where true growth happens.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Developer</span><br />
+                  Designing Web/App interfaces
+                </li>
+                <li>
+                  <span>Web Development</span><br />
+                  Web app Development
+                </li>
+                <li><span>Version control</span><br />Git</li>
+                <li>
+                  <span>Motivatee</span><br />Continuous learning and
+                  adaptability
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2016-2020</span><br />
+                  Baminton coach
+                </li>
+                <li>
+                  <span>2020-2022 </span><br />
+                  Call center agent
+                </li>
+                <li>
+                  <span>2022</span><br />
+                  Finance Specliast
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2015-2020</span><br />
+                  The National Vocational High School of Computer Technologies
+                  and Systems
+                </li>
+                <li>
+                  <span>2021-2022</span><br />
+                  English courses
+                </li>
+                <li>
+                  <span>2022-2023</span><br />
+                  Front end developer courses
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Website Design and Development</h2>
+            <p>
+              Create visually appealing and user-friendly websites tailored to
+              your unique brand or business. From concept to implementation, I
+              will work closely with you to understand your goals and deliver a
+              website that captures your vision.
+              <br />
+              <a href="#">Learn more</a>
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-file-code"></i>
+            <h2>Responsive Website Development</h2>
+            <p>
+              Create modern and responsive websites that adapt seamlessly to
+              different screen sizes and devices. I will ensure that your
+              website delivers a consistent and optimal user experience across
+              desktops, tablets, and mobile devices.
+              <br />
+              <a href="#">Learn more</a>
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-shield-halved"></i>
+            <h2>Website Maintenance and Support</h2>
+            <p>
+              Provide ongoing maintenance and support services to keep your
+              website up-to-date, secure, and performing well. Whether it's bug
+              fixes, security updates, or feature enhancements, I will ensure
+              that your website remains in top condition.
+              <br />
+              <a href="#">Learn more</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/portfolio-airbnb-1.jfif" />
+            <div class="layer">
+              <h3>Airbnb Clone Web</h3>
+              <p>
+                Airbnb is an online marketplace and hospitality service that
+                allows people to rent out their properties or spare rooms to
+                guests.
+              </p>
+              <a href="#"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/portfolio-netflix-2png.png" />
+            <div class="layer">
+              <h3>Netflix Clone Web</h3>
+              <p>
+                Netflix is a popular streaming service that provides a wide
+                range of movies, TV shows, documentaries, and original content
+                for subscribers to watch online.
+              </p>
+              <a href="#"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/portfolio-pluralsight-3.jpg" />
+            <div class="layer">
+              <h3>Pluralsight Clone Web</h3>
+              <p>
+                Pluralsight is an online learning platform that provides a wide
+                range of video courses and learning resources to help
+                individuals develop their skills in technology.
+              </p>
+              <a href="#"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>petkovmalamir@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>+359 885 423 966</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/malamir-petkov-17123426a/"
+                ><i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/mpetkov69/"
+                ><i class="fa-brands fa-square-instagram"></i>
+              </a>
+            </div>
+            <a href="images/CV-Malamir.pdf" download="" class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button class="btn btn2" type="submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Made with <i class="fa-solid fa-heart"></i> by Malamir Petkov</p>
+      </div>
+    </div>
+
+    <!-- Contact form catch -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzqYL7swvHzmYnjD2ictUxWEVIJg7ZhaKeWVTXlqzWeFDtIhwq8epxdlxSSWDd_s5jS/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then(
+            (response) => (msg.innerHTML = "Message sent succesfully"),
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000),
+            form.reset()
+          )
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="funcionallity.js"></script>
+  </body>
+</html>
